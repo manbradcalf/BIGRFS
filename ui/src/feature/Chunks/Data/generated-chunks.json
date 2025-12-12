@@ -1,0 +1,2126 @@
+[
+  {
+    "English": "Genres",
+    "Cypher": "MATCH (g:Genre)",
+    "QueryType": "MATCH_START",
+    "Requires": [],
+    "Provides": [
+      {
+        "Name": "g",
+        "AliasType": "Genre"
+      }
+    ],
+    "Slots": []
+  },
+  {
+    "English": "Users",
+    "Cypher": "MATCH (u:User)",
+    "QueryType": "MATCH_START",
+    "Requires": [],
+    "Provides": [
+      {
+        "Name": "u",
+        "AliasType": "User"
+      }
+    ],
+    "Slots": []
+  },
+  {
+    "English": "Directors",
+    "Cypher": "MATCH (d:Director)",
+    "QueryType": "MATCH_START",
+    "Requires": [],
+    "Provides": [
+      {
+        "Name": "d",
+        "AliasType": "Director"
+      }
+    ],
+    "Slots": []
+  },
+  {
+    "English": "Persons",
+    "Cypher": "MATCH (p:Person)",
+    "QueryType": "MATCH_START",
+    "Requires": [],
+    "Provides": [
+      {
+        "Name": "p",
+        "AliasType": "Person"
+      }
+    ],
+    "Slots": []
+  },
+  {
+    "English": "Actors",
+    "Cypher": "MATCH (a:Actor)",
+    "QueryType": "MATCH_START",
+    "Requires": [],
+    "Provides": [
+      {
+        "Name": "a",
+        "AliasType": "Actor"
+      }
+    ],
+    "Slots": []
+  },
+  {
+    "English": "Movies",
+    "Cypher": "MATCH (m:Movie)",
+    "QueryType": "MATCH_START",
+    "Requires": [],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": []
+  },
+  {
+    "English": "[name] (Genre)",
+    "Cypher": " g.name {condition} {value}",
+    "EnglishTemplate": "with name {condition} {value}",
+    "CypherTemplate": " g.name {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "g",
+        "AliasType": "Genre"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "g",
+        "AliasType": "Genre"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "name",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[name] (User)",
+    "Cypher": " u.name {condition} {value}",
+    "EnglishTemplate": "with name {condition} {value}",
+    "CypherTemplate": " u.name {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "u",
+        "AliasType": "User"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "u",
+        "AliasType": "User"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "name",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[userId] (User)",
+    "Cypher": " u.userId {condition} {value}",
+    "EnglishTemplate": "with userId {condition} {value}",
+    "CypherTemplate": " u.userId {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "u",
+        "AliasType": "User"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "u",
+        "AliasType": "User"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "userId",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[name] (Director)",
+    "Cypher": " d.name {condition} {value}",
+    "EnglishTemplate": "with name {condition} {value}",
+    "CypherTemplate": " d.name {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "d",
+        "AliasType": "Director"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "d",
+        "AliasType": "Director"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "name",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[imdbId] (Director)",
+    "Cypher": " d.imdbId {condition} {value}",
+    "EnglishTemplate": "with imdbId {condition} {value}",
+    "CypherTemplate": " d.imdbId {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "d",
+        "AliasType": "Director"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "d",
+        "AliasType": "Director"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "imdbId",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[tmdbId] (Director)",
+    "Cypher": " d.tmdbId {condition} {value}",
+    "EnglishTemplate": "with tmdbId {condition} {value}",
+    "CypherTemplate": " d.tmdbId {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "d",
+        "AliasType": "Director"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "d",
+        "AliasType": "Director"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "tmdbId",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[poster] (Director)",
+    "Cypher": " d.poster {condition} {value}",
+    "EnglishTemplate": "with poster {condition} {value}",
+    "CypherTemplate": " d.poster {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "d",
+        "AliasType": "Director"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "d",
+        "AliasType": "Director"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "poster",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[bornIn] (Director)",
+    "Cypher": " d.bornIn {condition} {value}",
+    "EnglishTemplate": "with bornIn {condition} {value}",
+    "CypherTemplate": " d.bornIn {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "d",
+        "AliasType": "Director"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "d",
+        "AliasType": "Director"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "bornIn",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[bio] (Director)",
+    "Cypher": " d.bio {condition} {value}",
+    "EnglishTemplate": "with bio {condition} {value}",
+    "CypherTemplate": " d.bio {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "d",
+        "AliasType": "Director"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "d",
+        "AliasType": "Director"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "bio",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[url] (Director)",
+    "Cypher": " d.url {condition} {value}",
+    "EnglishTemplate": "with url {condition} {value}",
+    "CypherTemplate": " d.url {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "d",
+        "AliasType": "Director"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "d",
+        "AliasType": "Director"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "url",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[name] (Person)",
+    "Cypher": " p.name {condition} {value}",
+    "EnglishTemplate": "with name {condition} {value}",
+    "CypherTemplate": " p.name {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "p",
+        "AliasType": "Person"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "p",
+        "AliasType": "Person"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "name",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[imdbId] (Person)",
+    "Cypher": " p.imdbId {condition} {value}",
+    "EnglishTemplate": "with imdbId {condition} {value}",
+    "CypherTemplate": " p.imdbId {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "p",
+        "AliasType": "Person"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "p",
+        "AliasType": "Person"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "imdbId",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[tmdbId] (Person)",
+    "Cypher": " p.tmdbId {condition} {value}",
+    "EnglishTemplate": "with tmdbId {condition} {value}",
+    "CypherTemplate": " p.tmdbId {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "p",
+        "AliasType": "Person"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "p",
+        "AliasType": "Person"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "tmdbId",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[poster] (Person)",
+    "Cypher": " p.poster {condition} {value}",
+    "EnglishTemplate": "with poster {condition} {value}",
+    "CypherTemplate": " p.poster {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "p",
+        "AliasType": "Person"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "p",
+        "AliasType": "Person"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "poster",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[bornIn] (Person)",
+    "Cypher": " p.bornIn {condition} {value}",
+    "EnglishTemplate": "with bornIn {condition} {value}",
+    "CypherTemplate": " p.bornIn {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "p",
+        "AliasType": "Person"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "p",
+        "AliasType": "Person"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "bornIn",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[bio] (Person)",
+    "Cypher": " p.bio {condition} {value}",
+    "EnglishTemplate": "with bio {condition} {value}",
+    "CypherTemplate": " p.bio {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "p",
+        "AliasType": "Person"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "p",
+        "AliasType": "Person"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "bio",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[url] (Person)",
+    "Cypher": " p.url {condition} {value}",
+    "EnglishTemplate": "with url {condition} {value}",
+    "CypherTemplate": " p.url {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "p",
+        "AliasType": "Person"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "p",
+        "AliasType": "Person"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "url",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[name] (Actor)",
+    "Cypher": " a.name {condition} {value}",
+    "EnglishTemplate": "with name {condition} {value}",
+    "CypherTemplate": " a.name {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "a",
+        "AliasType": "Actor"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "a",
+        "AliasType": "Actor"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "name",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[imdbId] (Actor)",
+    "Cypher": " a.imdbId {condition} {value}",
+    "EnglishTemplate": "with imdbId {condition} {value}",
+    "CypherTemplate": " a.imdbId {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "a",
+        "AliasType": "Actor"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "a",
+        "AliasType": "Actor"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "imdbId",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[tmdbId] (Actor)",
+    "Cypher": " a.tmdbId {condition} {value}",
+    "EnglishTemplate": "with tmdbId {condition} {value}",
+    "CypherTemplate": " a.tmdbId {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "a",
+        "AliasType": "Actor"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "a",
+        "AliasType": "Actor"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "tmdbId",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[poster] (Actor)",
+    "Cypher": " a.poster {condition} {value}",
+    "EnglishTemplate": "with poster {condition} {value}",
+    "CypherTemplate": " a.poster {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "a",
+        "AliasType": "Actor"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "a",
+        "AliasType": "Actor"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "poster",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[bornIn] (Actor)",
+    "Cypher": " a.bornIn {condition} {value}",
+    "EnglishTemplate": "with bornIn {condition} {value}",
+    "CypherTemplate": " a.bornIn {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "a",
+        "AliasType": "Actor"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "a",
+        "AliasType": "Actor"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "bornIn",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[bio] (Actor)",
+    "Cypher": " a.bio {condition} {value}",
+    "EnglishTemplate": "with bio {condition} {value}",
+    "CypherTemplate": " a.bio {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "a",
+        "AliasType": "Actor"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "a",
+        "AliasType": "Actor"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "bio",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[url] (Actor)",
+    "Cypher": " a.url {condition} {value}",
+    "EnglishTemplate": "with url {condition} {value}",
+    "CypherTemplate": " a.url {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "a",
+        "AliasType": "Actor"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "a",
+        "AliasType": "Actor"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "url",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[year] (Movie)",
+    "Cypher": " m.year ",
+    "EnglishTemplate": "year {condition} {value}",
+    "CypherTemplate": "m.year {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "year",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": ">",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": 100,
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[imdbRating] (Movie)",
+    "Cypher": " m.imdbRating ",
+    "EnglishTemplate": "imdbRating {condition} {value}",
+    "CypherTemplate": "m.imdbRating {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "imdbRating",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": ">",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": 100,
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[imdbVotes] (Movie)",
+    "Cypher": " m.imdbVotes ",
+    "EnglishTemplate": "imdbVotes {condition} {value}",
+    "CypherTemplate": "m.imdbVotes {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "imdbVotes",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": ">",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": 100,
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[runtime] (Movie)",
+    "Cypher": " m.runtime ",
+    "EnglishTemplate": "runtime {condition} {value}",
+    "CypherTemplate": "m.runtime {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "runtime",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": ">",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": 100,
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[revenue] (Movie)",
+    "Cypher": " m.revenue ",
+    "EnglishTemplate": "revenue {condition} {value}",
+    "CypherTemplate": "m.revenue {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "revenue",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": ">",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": 100,
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[budget] (Movie)",
+    "Cypher": " m.budget ",
+    "EnglishTemplate": "budget {condition} {value}",
+    "CypherTemplate": "m.budget {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "budget",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": ">",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": 100,
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[movieId] (Movie)",
+    "Cypher": " m.movieId {condition} {value}",
+    "EnglishTemplate": "with movieId {condition} {value}",
+    "CypherTemplate": " m.movieId {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "movieId",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[imdbId] (Movie)",
+    "Cypher": " m.imdbId {condition} {value}",
+    "EnglishTemplate": "with imdbId {condition} {value}",
+    "CypherTemplate": " m.imdbId {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "imdbId",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[title] (Movie)",
+    "Cypher": " m.title {condition} {value}",
+    "EnglishTemplate": "with title {condition} {value}",
+    "CypherTemplate": " m.title {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "title",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[tmdbId] (Movie)",
+    "Cypher": " m.tmdbId {condition} {value}",
+    "EnglishTemplate": "with tmdbId {condition} {value}",
+    "CypherTemplate": " m.tmdbId {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "tmdbId",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[plot] (Movie)",
+    "Cypher": " m.plot {condition} {value}",
+    "EnglishTemplate": "with plot {condition} {value}",
+    "CypherTemplate": " m.plot {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "plot",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[released] (Movie)",
+    "Cypher": " m.released {condition} {value}",
+    "EnglishTemplate": "with released {condition} {value}",
+    "CypherTemplate": " m.released {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "released",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[poster] (Movie)",
+    "Cypher": " m.poster {condition} {value}",
+    "EnglishTemplate": "with poster {condition} {value}",
+    "CypherTemplate": " m.poster {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "poster",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[url] (Movie)",
+    "Cypher": " m.url {condition} {value}",
+    "EnglishTemplate": "with url {condition} {value}",
+    "CypherTemplate": " m.url {condition} {value}",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "stat",
+        "Value": "url",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "=",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "value",
+        "Value": "something",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "with [countries] in [countries] (Movie)",
+    "EnglishTemplate": "with {value} in countries",
+    "CypherTemplate": "{value} IN m.countries",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "value",
+        "Value": "BAL",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "in",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "stat",
+        "Value": "countries",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "with [languages] in [languages] (Movie)",
+    "EnglishTemplate": "with {value} in languages",
+    "CypherTemplate": "{value} IN m.languages",
+    "QueryType": "FILTER",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": [
+      {
+        "Name": "value",
+        "Value": "BAL",
+        "SlotValueTypes": [
+          "FilterValue"
+        ]
+      },
+      {
+        "Name": "condition",
+        "Value": "in",
+        "SlotValueTypes": [
+          "FilterCondition"
+        ]
+      },
+      {
+        "Name": "stat",
+        "Value": "languages",
+        "SlotValueTypes": [
+          "Filter"
+        ]
+      }
+    ]
+  },
+  {
+    "English": "[Actor] - r[ACTED_IN] -> [Movie]",
+    "EnglishTemplate": "Actor - ACTED_IN -> Movie",
+    "Cypher": "MATCH (a:Actor)-[:ACTED_IN]->(m:Movie)",
+    "QueryType": "JUNCTION",
+    "Requires": [
+      {
+        "Name": "a",
+        "AliasType": "Actor"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "a",
+        "AliasType": "Actor"
+      },
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": []
+  },
+  {
+    "English": "[Movie] <- r[ACTED_IN] - [Actor]",
+    "EnglishTemplate": "Movie <- ACTED_IN - Actor",
+    "Cypher": "MATCH (m:Movie)<-[:ACTED_IN]-(a:Actor)",
+    "QueryType": "JUNCTION",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      },
+      {
+        "Name": "a",
+        "AliasType": "Actor"
+      }
+    ],
+    "Slots": []
+  },
+  {
+    "English": "[Person] - r[ACTED_IN] -> [Movie]",
+    "EnglishTemplate": "Person - ACTED_IN -> Movie",
+    "Cypher": "MATCH (p:Person)-[:ACTED_IN]->(m:Movie)",
+    "QueryType": "JUNCTION",
+    "Requires": [
+      {
+        "Name": "p",
+        "AliasType": "Person"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "p",
+        "AliasType": "Person"
+      },
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": []
+  },
+  {
+    "English": "[Movie] <- r[ACTED_IN] - [Person]",
+    "EnglishTemplate": "Movie <- ACTED_IN - Person",
+    "Cypher": "MATCH (m:Movie)<-[:ACTED_IN]-(p:Person)",
+    "QueryType": "JUNCTION",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      },
+      {
+        "Name": "p",
+        "AliasType": "Person"
+      }
+    ],
+    "Slots": []
+  },
+  {
+    "English": "[Director] - r[ACTED_IN] -> [Movie]",
+    "EnglishTemplate": "Director - ACTED_IN -> Movie",
+    "Cypher": "MATCH (d:Director)-[:ACTED_IN]->(m:Movie)",
+    "QueryType": "JUNCTION",
+    "Requires": [
+      {
+        "Name": "d",
+        "AliasType": "Director"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "d",
+        "AliasType": "Director"
+      },
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": []
+  },
+  {
+    "English": "[Movie] <- r[ACTED_IN] - [Director]",
+    "EnglishTemplate": "Movie <- ACTED_IN - Director",
+    "Cypher": "MATCH (m:Movie)<-[:ACTED_IN]-(d:Director)",
+    "QueryType": "JUNCTION",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      },
+      {
+        "Name": "d",
+        "AliasType": "Director"
+      }
+    ],
+    "Slots": []
+  },
+  {
+    "English": "[Director] - r[DIRECTED] -> [Movie]",
+    "EnglishTemplate": "Director - DIRECTED -> Movie",
+    "Cypher": "MATCH (d:Director)-[:DIRECTED]->(m:Movie)",
+    "QueryType": "JUNCTION",
+    "Requires": [
+      {
+        "Name": "d",
+        "AliasType": "Director"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "d",
+        "AliasType": "Director"
+      },
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": []
+  },
+  {
+    "English": "[Movie] <- r[DIRECTED] - [Director]",
+    "EnglishTemplate": "Movie <- DIRECTED - Director",
+    "Cypher": "MATCH (m:Movie)<-[:DIRECTED]-(d:Director)",
+    "QueryType": "JUNCTION",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      },
+      {
+        "Name": "d",
+        "AliasType": "Director"
+      }
+    ],
+    "Slots": []
+  },
+  {
+    "English": "[Person] - r[DIRECTED] -> [Movie]",
+    "EnglishTemplate": "Person - DIRECTED -> Movie",
+    "Cypher": "MATCH (p:Person)-[:DIRECTED]->(m:Movie)",
+    "QueryType": "JUNCTION",
+    "Requires": [
+      {
+        "Name": "p",
+        "AliasType": "Person"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "p",
+        "AliasType": "Person"
+      },
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": []
+  },
+  {
+    "English": "[Movie] <- r[DIRECTED] - [Person]",
+    "EnglishTemplate": "Movie <- DIRECTED - Person",
+    "Cypher": "MATCH (m:Movie)<-[:DIRECTED]-(p:Person)",
+    "QueryType": "JUNCTION",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      },
+      {
+        "Name": "p",
+        "AliasType": "Person"
+      }
+    ],
+    "Slots": []
+  },
+  {
+    "English": "[Actor] - r[DIRECTED] -> [Movie]",
+    "EnglishTemplate": "Actor - DIRECTED -> Movie",
+    "Cypher": "MATCH (a:Actor)-[:DIRECTED]->(m:Movie)",
+    "QueryType": "JUNCTION",
+    "Requires": [
+      {
+        "Name": "a",
+        "AliasType": "Actor"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "a",
+        "AliasType": "Actor"
+      },
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": []
+  },
+  {
+    "English": "[Movie] <- r[DIRECTED] - [Actor]",
+    "EnglishTemplate": "Movie <- DIRECTED - Actor",
+    "Cypher": "MATCH (m:Movie)<-[:DIRECTED]-(a:Actor)",
+    "QueryType": "JUNCTION",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      },
+      {
+        "Name": "a",
+        "AliasType": "Actor"
+      }
+    ],
+    "Slots": []
+  },
+  {
+    "English": "[Movie] - r[IN_GENRE] -> [Genre]",
+    "EnglishTemplate": "Movie - IN_GENRE -> Genre",
+    "Cypher": "MATCH (m:Movie)-[:IN_GENRE]->(g:Genre)",
+    "QueryType": "JUNCTION",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      },
+      {
+        "Name": "g",
+        "AliasType": "Genre"
+      }
+    ],
+    "Slots": []
+  },
+  {
+    "English": "[Genre] <- r[IN_GENRE] - [Movie]",
+    "EnglishTemplate": "Genre <- IN_GENRE - Movie",
+    "Cypher": "MATCH (g:Genre)<-[:IN_GENRE]-(m:Movie)",
+    "QueryType": "JUNCTION",
+    "Requires": [
+      {
+        "Name": "g",
+        "AliasType": "Genre"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "g",
+        "AliasType": "Genre"
+      },
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": []
+  },
+  {
+    "English": "[User] - r[RATED] -> [Movie]",
+    "EnglishTemplate": "User - RATED -> Movie",
+    "Cypher": "MATCH (u:User)-[:RATED]->(m:Movie)",
+    "QueryType": "JUNCTION",
+    "Requires": [
+      {
+        "Name": "u",
+        "AliasType": "User"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "u",
+        "AliasType": "User"
+      },
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Slots": []
+  },
+  {
+    "English": "[Movie] <- r[RATED] - [User]",
+    "EnglishTemplate": "Movie <- RATED - User",
+    "Cypher": "MATCH (m:Movie)<-[:RATED]-(u:User)",
+    "QueryType": "JUNCTION",
+    "Requires": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      }
+    ],
+    "Provides": [
+      {
+        "Name": "m",
+        "AliasType": "Movie"
+      },
+      {
+        "Name": "u",
+        "AliasType": "User"
+      }
+    ],
+    "Slots": []
+  }
+]
