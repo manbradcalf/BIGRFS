@@ -1,5 +1,4 @@
 import { Alias } from "./Types/Alias";
-import { AliasType } from "./Enums/AliasType";
 import { ALIAS_TYPE_TO_PROPERTIES_MAP } from "./Views/AliasTypePropertiesMap";
 
 const getPropertiesByType = (aliasType: AliasType): string[] => {
