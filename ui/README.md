@@ -1,4 +1,4 @@
-# StatFoundry UI
+# BIGRFS UI
 
 React frontend application for testing the chunk-based query building system.
 
@@ -47,13 +47,13 @@ Environment variables:
 
 ## How to Use
 
-1. Start typing in the search bar (e.g., "Receivers who")
+1. Start typing in the search bar
 2. Select from the dropdown suggestions
-3. Continue building your query by typing more (e.g., "caught at least")
+3. Continue building your query by typing more
 4. Watch as the system builds both English and Cypher queries automatically
 5. Use the clear button (×) to start over
 
-## Example Flow
+## Example Flow from StatFoundry.com (The original BIGRFS Prototype)
 
 1. Type "Receivers" → Select "Receivers who"
 2. Type "caught" → Select "caught at least {receptions} receptions"
